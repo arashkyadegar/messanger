@@ -3,15 +3,14 @@ import logo from './logo.svg';
 import './App.css';
 
 import { useAppDispatch, useAppSelector } from "./redux/store/hooks";
-import {
-  postsRecieved
-} from "./redux/reducer/posts"
 import StoryComponent from './components/story/story';
 import HeaderComponent from './components/header/header';
+import PostComponent from './components/post/post';
 function App() {
   const dispatch = useAppDispatch();
 
-  dispatch(postsRecieved([{ name: 'arahk', lastname: 'yadegar' }]));
+  const images = ['1.jpg', '2.jpg','1.jpg', '2.jpg','1.jpg', '2.jpg'];
+  const images1 = ['1.jpg'];
   return (
     <>
       <div className='container max-w-sm' >
@@ -26,7 +25,11 @@ function App() {
         </div>
         {/* posts start from herer */}
         <div className='flex flex-col'>
+          <PostComponent images={images} />
 
+          <PostComponent images={images} />
+
+          <PostComponent images={images1} />
         </div>
       </div>
 
