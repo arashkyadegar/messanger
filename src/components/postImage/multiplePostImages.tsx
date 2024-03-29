@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import {
   Pagination
 } from "swiper/modules";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -16,7 +15,7 @@ export default function MultiplePostImageComponent(props: any) {
   return (
     <div className=" w-full order-1  sm:order-2 col-span-3 relative overflow-visible">
       <Swiper
-        className="rounded-lg w-full"
+        className=" w-full"
         modules={[Pagination]}
         spaceBetween={1}
         slidesPerView={1}
@@ -31,7 +30,7 @@ export default function MultiplePostImageComponent(props: any) {
             <img src={getimg(image)}
               width={500}
               height={500}
-              className="w-full h-72 aspect-square rounded-lg "
+              className="w-full h-72 aspect-square"
               alt="lopencandy"
               crossOrigin="anonymous"
             />
