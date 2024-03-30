@@ -3,11 +3,26 @@ import { useAppDispatch } from "../../redux/store/hooks"
 
 function ActivityMentionComponent(props: any) {
      const dispatch = useAppDispatch();
+     const username = "amin_.ta"
      return (
           <>
-               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
-               </svg>
+               <div className='col-span-1'>
+
+                    <div className='w-full   flex justify-center p-1' >
+                         <img className=' w-16  aspect-square ' src="/images/2.jpg" title="" alt="" />
+                    </div>
+                   </div>
+               <div className='col-span-2 flex flex-col justify-center text-left text-xs p-1' >
+                    <h6 className='font-bold'>{username}<span className='font-medium'> : mentioned you in a comment</span></h6>
+
+
+               </div>
+               <div className='col-span-1 flex flex-col justify-center '>
+                    <div className='w-full   flex flex-row justify-center rounded-full overflow-hidden ' >
+                         <img className='w-14 aspect-square  rounded-full' src="/images/pexels-italo-melo-2379004.jpg" title="" alt="" />
+                    </div>
+
+               </div>
           </>
      );
 }
