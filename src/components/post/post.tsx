@@ -42,6 +42,7 @@ function PostComponent(props: any) {
                          <ViewAllCommentComponent count={5} />
                     </div>
                </div>
+
           </div>);
 
 
