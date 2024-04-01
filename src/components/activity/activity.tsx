@@ -9,7 +9,7 @@ function ActivityComponent(props: any) {
      const username = "amin_.ta"
      return (
           <>
-               <div className='p-2 fixed w-[320px] bg-pink-100 flex flex-row-reverse justify-between  gap-4 top-0 z-50 border border-gray-100'>
+               <div className='p-2 w-[320px] bg-pink-100 flex flex-row-reverse justify-between  gap-4 top-0 z-50 border border-gray-100'>
                     <h1 >Activity</h1>
                </div>
                <div className='mt-11 flex flex-col '>

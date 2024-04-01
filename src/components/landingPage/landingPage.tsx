@@ -15,20 +15,20 @@ function LandingPageComponent(props: any) {
           <>
 
                <HeaderComponent />
-               <div className='mt-5 flex flex-row-reverse  border-b border-gray-200 gap-2 overflow-hidden pb-1' >
+               <div className='mt-5 flex flex-row-reverse  gap-2 overflow-hidden pb-1' >
                     <div className='flex-row flex gap-2 h-24'>
                          <StoryComponent name='current user' avatar='pexels-italo-melo-2379004.jpg' />
-                         <StoryComponent name='arashk yadegar ashkan' avatar='pexels-italo-melo-2379004.jpg' />
+                         <StoryComponent name='arashk yadegar azita' avatar='pexels-italo-melo-2379004.jpg' />
                          <StoryComponent name='azita rad' avatar='pexels-justin-shaifer-1222271.jpg' />
                     </div>
                </div>
 
                <div className='flex flex-col  mb-10'>
-                    <PostComponent images={images} />
+                    <PostComponent title='SportsMBA' avatar='pexels-italo-melo-2379004.jpg' images={images} />
 
-                    <PostComponent images={images} />
-                    <PostComponent images={images} />
-                    <PostComponent images={images1} />
+                    <PostComponent title='yadegar' avatar='pexels-italo-melo-2379004.jpg' images={images}  />
+                    <PostComponent title='arashk' avatar='pexels-italo-melo-2379004.jpg' images={images} />
+                    <PostComponent title='azita' avatar='pexels-italo-melo-2379004.jpg' images={images1} />
                </div>
 
 

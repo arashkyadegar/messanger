@@ -7,16 +7,20 @@ import SearchComponent from './components/search/search';
 import LandingPageComponent from './components/landingPage/landingPage';
 import ActivityComponent from './components/activity/activity';
 import DirectMsgComponent from './components/directMsg/directMsg';
+import CreatePostComponent from './components/createPost/createPost';
 function App() {
   const dispatch = useAppDispatch();
 
   return (
     <div className='container max-w-sm' >
-      <ActivityComponent />
+
       <LandingPageComponent />
+      <ActivityComponent />
+      <CreatePostComponent />
       <SearchComponent />
-      <FooterComponent /> 
       <DirectMsgComponent />
+
+      <FooterComponent />
     </div>
 
   );
