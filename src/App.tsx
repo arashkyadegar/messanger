@@ -19,20 +19,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<LandingPageComponent />} />
-          <Route path="searchs" element={<SearchComponent />} />
-          <Route path="activities" element={<ActivityComponent />} />
-          <Route path="posts" element={<CreatePostComponent />} />
-          <Route path="messages" element={<DirectMsgComponent />} />
+          <Route path="search" element={<SearchComponent />} />
+          <Route path="activity" element={<ActivityComponent />} />
+          <Route path="post" element={<CreatePostComponent />} />
+          <Route path="direct" element={<DirectMsgComponent />} />
         </Route>
       </Routes>
     </BrowserRouter>
-      {/* <LandingPageComponent />
-      <ActivityComponent />
-      <CreatePostComponent />
-      <SearchComponent />
-      <DirectMsgComponent /> 
-
-      <FooterComponent />*/}
     </div>
 
   );
