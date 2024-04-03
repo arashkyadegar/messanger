@@ -13,8 +13,9 @@ function LandingPageComponent(props: any) {
      const images1 = ['1.jpg'];
      return (
           <>
+
                <HeaderComponent />
-               <div className='mt-10 flex flex-row-reverse  gap-2 overflow-hidden pb-1' >
+               <div className='mt-5 flex flex-row-reverse  gap-2 overflow-hidden pb-1' >
                     <div className='flex-row flex gap-2 h-24'>
                          <StoryComponent name='current user' avatar='pexels-italo-melo-2379004.jpg' />
                          <StoryComponent name='arashk yadegar azita' avatar='pexels-italo-melo-2379004.jpg' />
