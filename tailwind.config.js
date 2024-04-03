@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'black-rgba': 'rgba(0, 0, 0, 0.54)',
+      },
       container: {
         center: true,
         padding: '2rem',
